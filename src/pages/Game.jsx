@@ -48,9 +48,9 @@ const Game = () => {
     return (
         <div className="container">
             <div className="header">
-                <span className="score">
+                <div className="score">
                     <span className="score-yellow">{correctQuestions}</span>/{questions.length}
-                </span>
+                </div>
                 <h3 className="difficulty">{difficulty.toUpperCase()}</h3>
                 <button className='button-warning' onClick={() => navigate("/")}>
                     Back to Difficulty

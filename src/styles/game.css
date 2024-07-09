@@ -54,14 +54,13 @@
     color: #fdfdfd;
     text-align: center;
     margin: 0 auto;
-    margin-left: 380px; 
+    margin-left: 380px; /* Ajuste para centrar mejor */
     transition: transform 0.3s ease;
 }
 
 .difficulty:hover {
     transform: scale(1.1);
 }
-
 
 @media (max-width: 600px) {
     .container {
@@ -77,11 +76,16 @@
     .score {
         font-size: 18px;
         padding: 5px;
+        margin-bottom: 10px;
     }
 
     .difficulty {
         font-size: 18px;
         padding: 5px;
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100%; 
+        text-align: center;
     }
 
     .btns {
