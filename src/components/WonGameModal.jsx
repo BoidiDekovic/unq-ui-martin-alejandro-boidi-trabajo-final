@@ -9,13 +9,13 @@ const WonGameModal = ({ startGame }) => {
         <div className="modal">
             <div className="modal-content">
                 <h2 className="modal-heading">Congratulations!</h2>
-                <p className="modal-text">You won the game!</p>
+                <p className="modal-text">YOU WON THE GAME!</p>
                 <div className="button-group">
                     <button className="btns modal-button" onClick={startGame}>
                         Play Again
                     </button>
                     <button className="btns modal-button" onClick={() => navigate("/")}>
-                        Home
+                        Select Difficulty
                     </button>
                 </div>
             </div>

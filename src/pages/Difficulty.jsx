@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getDifficulty } from '../service/Api';
-import '../styles/home.css';
 import Spinner from '../components/Spinner';
+import '../styles/difficulty.css';
 
-const Home = () => {
+const Difficulty = () => {
     const navigate = useNavigate();
     const [gameDifficulty, setGameDifficulty] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -36,4 +36,4 @@ const Home = () => {
     );
 }
 
-export default Home;
+export default Difficulty;

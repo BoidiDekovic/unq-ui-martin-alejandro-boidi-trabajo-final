@@ -1,9 +1,8 @@
-import React from 'react';
 import { answer } from '../service/Api';
 import '../styles/question.css';
 
-const Question = ({ question, answerSelect, setAnswerSelect, nextQuestion, startGame }) => {
-    const { id, question: questionText, ...options } = question;
+const Question = ({ currentQuestion, answerSelect, setAnswerSelect, nextQuestion, startGame }) => {
+    const { id, question: questionText, ...options } = currentQuestion;
 
     return (
         <div className="buttonContainer">
@@ -11,6 +10,7 @@ const Question = ({ question, answerSelect, setAnswerSelect, nextQuestion, start
             <div className="options">
                 {Object.entries(options).map(([key, value]) => {
                     const buttonStyle = answerSelect?.option === key ? `btns button-${answerSelect.answer ? 'success' : 'danger'}` : 'btns';
+
                     return (
                         <button
                             key={key}
@@ -25,7 +25,7 @@ const Question = ({ question, answerSelect, setAnswerSelect, nextQuestion, start
                     );
                 })}
             </div>
-            
+
             {answerSelect && (
                 <button
                     onClick={answerSelect.answer ? nextQuestion : startGame}

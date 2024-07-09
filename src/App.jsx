@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import Home from "./pages/Home"
+import Difficulty from "./pages/Difficulty"
 import Game from "./pages/Game"
+
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
           <Route 
             path="/"
             element={
-              <Home />
+              <Difficulty />
             }
           />
           <Route

@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
     background: url("src/assets/image/the-game-question-the-question-mark-super-mario-wallpaper-preview.jpg");
+    font-family: 'Press Start 2P', cursive;
   }

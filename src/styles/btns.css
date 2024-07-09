@@ -1,0 +1,70 @@
+.btns, .button-warning, .button-success, .button-danger {
+    font-family: 'Press Start 2P', cursive;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.726);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transform: translateY(0);
+}
+
+.btns {
+    background-color: #197dff;
+    padding: 15px 30px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.btns:hover {
+    background-color: #1251da;
+    transform: translateY(-5px);
+}
+
+.button-warning {
+    background-color: #fbbf24;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.button-warning:hover {
+    background-color: #e3a009;
+    transform: translateY(-5px);
+}
+
+.button-success {
+    background-color: #05ee2c;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.button-success:hover {
+    background-color: #04c124;
+    transform: translateY(-5px);
+}
+
+.button-danger {
+    background-color: #ef4444;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.button-danger:hover {
+    background-color: #d93838;
+    transform: translateY(-5px);
+}
+
+.button-full-width {
+    width: 45%;
+    margin: 10px 0;
+}
+
+.buttonContainer {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
