@@ -54,7 +54,7 @@
     color: #fdfdfd;
     text-align: center;
     margin: 0 auto;
-    margin-left: 380px; /* Ajuste para centrar mejor */
+    margin-left: 380px; 
     transition: transform 0.3s ease;
 }
 
